@@ -1,0 +1,241 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333; /* Dark gray text color */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header Styles */
+.navbar {
+  background-color: #004d99; /* Deep Blue */
+  padding: 15px 0;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.nav-link {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1631270314738-e6f6827f8d9f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHByaW50fGVufDB8fDB8fHww');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #00cc66; /* Green */
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #00994d; /* Darker Green on hover */
+}
+
+/* Advantages Section */
+.advantages-section {
+  padding: 80px 0;
+}
+
+.advantages-section .card {
+  background-color: #f8f9fa; /* Light Gray */
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.advantages-section .card-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.advantages-section .card-text {
+  font-size: 18px;
+}
+
+/* Price Section */
+.price-section {
+  padding: 80px 0;
+}
+
+.price-card {
+  background-color: #f8f9fa; /* Light Gray */
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+}
+
+.price-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.price-amount {
+  font-size: 20px;
+  color: #007bff; /* Blue */
+  font-weight: bold;
+}
+
+/* Opening Hours Section */
+.opening-hours-section {
+  background-color: #f8f9fa; /* Light Gray */
+  padding: 80px 0;
+}
+
+.opening-hours-info {
+  color: #333;
+}
+
+.opening-hours-timer p {
+  font-size: 20px;
+}
+
+#timer {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+}
+
+.accordion-button {
+  background-color: #f8f9fa; /* Light Gray */
+  color: #333; /* Dark Gray */
+  font-weight: bold;
+}
+
+/* Motivation Section */
+.motivation-section {
+  background-color: #f8f9fa; /* Light Gray */
+  padding: 80px 0;
+}
+
+.motivation-section .motivation-card {
+  background-color: #f8f9fa; /* Light Gray */
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.motivation-section .motivation-card:hover {
+  transform: translateY(-5px);
+}
+
+.motivation-section .motivation-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.motivation-section .motivation-description {
+  font-size: 18px;
+  color: #343a40; /* Dark Gray */
+}
+
+/* Footer */
+.footer {
+  background-color: #64707b; /* Darker background color */
+  color: #fff; /* White text color */
+  padding: 40px 0; /* Increased padding for better visibility */
+}
+
+.footer-message {
+  margin-bottom: 20px; /* Increased margin at the bottom */
+  font-size: 16px;
+}
+
+.footer-message a {
+  color: #ffc107; /* Yellow color for the link */
+  text-decoration: underline;
+}
+
+.footer-message a:hover {
+  color: #ffca28; /* Lighter shade of yellow on hover */
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.social-icons li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #fff; /* White color for the icons */
+  font-size: 20px;
+}
+
+.social-icons li a:hover {
+  color: #ffc107; /* Yellow color for the icons on hover */
+}
+
+.footer-text {
+  color: #fff; /* White color for the text */
+  font-size: 14px;
+}
+
+/* Icons moving */
+a i:hover{
+  -webkit-animation-name: fa-beat;
+  animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay,0s);
+  animation-delay: var(--fa-animation-delay,0s);
+  -webkit-animation-direction: var(--fa-animation-direction,normal);
+  animation-direction: var(--fa-animation-direction,normal);
+  -webkit-animation-duration: var(--fa-animation-duration,1s);
+  animation-duration: var(--fa-animation-duration,1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+  animation-iteration-count: var(--fa-animation-iteration-count,infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing,ease-in-out);
+  animation-timing-function: var(--fa-animation-timing,ease-in-out);
+}
+
+/* Timer */
+.open-message {
+  background-color: #d4edda; /* Green background color */
+  color: #155724; /* Dark green text color */
+  padding: 10px 20px; /* Padding for the message */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px; /* Margin from the timer */
+}
