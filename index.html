@@ -93,9 +93,9 @@
                 Projects 7 & 8
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="https://abdullahdigital.github.io/landing/" target="_blank">LAnding
+                <li><a class="dropdown-item" href="https://abdullahdigital.github.io/landingpage/" target="_blank">LAnding
                     Page</a></li>
-                <li><a class="dropdown-item" href="https://abdullahdigital.github.io/commingsoon/"
+                <li><a class="dropdown-item" href="https://abdullahdigital.github.io/comingsoon/"
                     target="_blank">Coming Soon</a></li>
               </ul>
             </li>
@@ -191,7 +191,7 @@
 
 
 
- <!-- Price Section -->
+<!-- Price Section -->
 <section class="price-section py-5">
   <div class="container">
     <h2 class="section-title text-center mb-4">Printing Services Price List</h2>
@@ -199,18 +199,30 @@
       <div class="col-md-6">
         <div class="price-card">
           <h3 class="price-title">Single Page</h3>
-          <p class="price-amount">Rs. 15</p>
+          <del><p class="price-amount">Rs. 15</p></del>
+          <p class="price-amount">Rs. 10</p>
+          <input type="number" id="singlePageInput" placeholder="Enter number of pages">
+          <button onclick="calculatePrice('single')">Calculate</button>
+          <p id="singlePagePrice"></p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="price-card">
           <h3 class="price-title">Double Page</h3>
-          <p class="price-amount">Rs. 20</p>
+          <del><p class="price-amount">Rs. 20</p></del>
+          <p class="price-amount">Rs. 15</p>
+          <input type="number" id="doublePageInput" placeholder="Enter number of pages">
+          <button onclick="calculatePrice('double')">Calculate</button>
+          <p id="doublePagePrice"></p>
         </div>
       </div>
     </div>
+
   </div>
 </section>
+
+
+
 
 
   <!-- Opening Hours Section -->
@@ -218,8 +230,8 @@
     <div class="container">
         <h2 class="section-title text-center mb-4">Opening Hours</h2>
         <div class="opening-hours-info text-center mb-4">
-            <p>Monday - Friday: 5:00 PM - 9:30 PM</p>
-            <p>Saturday - Sunday: 6:00 AM - 9:30 PM</p>
+            <!-- <p>Monday - Friday: 5:00 PM - 9:30 PM</p>
+            <p>Saturday - Sunday: 6:00 AM - 9:30 PM</p> -->
         </div>
         <div class="opening-hours-timer text-center">
             <b><p id="timingTimer"></p></b>
@@ -272,6 +284,20 @@
           data-bs-parent="#accordionFAQ">
           <div class="accordion-body">
             No, you can't DM for this purpose because I need to sleep. But if you want to have late-night chats, feel free to DM. 😉
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Do I do colored print?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionFAQ">
+          <div class="accordion-body">
+           Our Motto is "Black lives matters!!" <br> So accecpt black and white print and dont be racist.
           </div>
         </div>
       </div>
@@ -341,6 +367,8 @@
 
 
   <script src="click.js"></script>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"
     integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A=="
