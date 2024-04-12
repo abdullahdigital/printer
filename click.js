@@ -44,5 +44,59 @@ function calculatePrice(type) {
     priceParagraph.textContent = `Total Price: Rs. ${totalPrice}`;
   }
   
-  // Remove Eid offer button and related code
-  
+                                        //Whatsapp
+
+function decryptPhoneNumber(encryptedPhoneNumber) {
+  var decryptedNumber = atob(encryptedPhoneNumber); 
+  return decryptedNumber;
+}
+
+
+var pehlaPyar = decryptPhoneNumber("OTIzMTY5NjMzNTE0"); 
+
+
+var dosraPyar = decryptPhoneNumber("MTI3NDUyNjM="); 
+function openWhatsApp() {
+ 
+  window.open("https://wa.me/" + pehlaPyar, "_blank");
+}
+
+
+
+function decryptNumber(encryptedNumber) {
+  try {
+   
+    return atob(encryptedNumber);
+  } catch (error) {
+    
+    return encryptedNumber;
+  }
+}
+
+
+
+
+function redirectToFlagPageIfCorrectNumberPassed(encryptedNumber) {
+ 
+  var expectedEncryptedNumber = "MTI3NDUyNjM=";
+  var expectedEncryptedNumber = atob(expectedEncryptedNumber); 
+
+
+  if (encryptedNumber === expectedEncryptedNumber) {
+    // Redirect to flag.html with the encrypted number as query parameter
+    window.location.href = "a.html?number=" + encryptedNumber;
+  } else {
+    console.log("Incorrect parameter or no number provided.");
+  }
+}
+
+
+var urlParams = new URLSearchParams(window.location.search);
+
+
+var encryptedNumber = urlParams.get("number");
+
+
+if (encryptedNumber !== null) {
+  redirectToFlagPageIfCorrectNumberPassed(encryptedNumber);
+}

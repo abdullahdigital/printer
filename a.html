@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protected Flag</title>
+</head>
+<body>
+  <h1>Protected Flag</h1>
+  <label for="password">Enter Passphrase:</label>
+  <input type="password" id="password">
+  <button onclick="decryptFlag()">Decrypt Flag</button>
+  
+  <script>
+    var encodedPassword = "MTI3NDUyNjM="; 
+
+    var encodedFlag = "RmxhZyA6IGN0ZntpX3dvbl90aGlzX2NoYWxsZW5nZX0="; 
+    function decodeBase64(encodedString) {
+      return atob(encodedString);
+    }
+
+   
+    function decryptFlag() {
+      var password = document.getElementById("password").value;
+      var decodedPassword = decodeBase64(encodedPassword);
+      if (password === decodedPassword) {
+      
+        var flag = decodeBase64(encodedFlag);
+        alert(flag);
+      } else {
+        alert("Incorrect passphrase!");
+      }
+    }
+  </script>
+</body>
+</html>
