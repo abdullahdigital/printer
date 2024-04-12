@@ -10,7 +10,7 @@
   <label for="password">Enter Passphrase:</label>
   <input type="password" id="password">
   <button onclick="decryptFlag()">Decrypt Flag</button>
-  
+  <button onclick="showHint()">Hint</button>
   <script>
     var encodedPassword = "MTI3NDUyNjM="; 
 
@@ -30,6 +30,11 @@
       } else {
         alert("Incorrect passphrase!");
       }
+    }
+
+
+    function showHint() {
+      alert("pelaPyar ya dosraPyar");
     }
   </script>
 </body>
