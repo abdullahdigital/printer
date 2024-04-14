@@ -197,39 +197,36 @@
       <div class="col-md-6">
         <div class="price-card">
           <h3 class="price-title">Single Page</h3>
-          <del><p class="price-amount">Rs. 15</p></del>
-          <p class="price-amount"><span style="color: red;">Eid Offer Till 14th april!</span> Rs. 10</p>
+          <p class="price-amount">Rs. 15 / Rs. 20</p>
+          <ul>
+            <li>Rs. 15/per page for even number of pages.</li>
+            <li>Rs. 20/per page for odd number of pages.</li>
+          </ul>
           <input type="number" id="singlePageInput" placeholder="Enter number of pages">
-          <button onclick="calculatePrice('single')">Calculate</button>
+          <button onclick="calculatePrice('single')">Calculate Price</button>
           <p id="singlePagePrice"></p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="price-card">
           <h3 class="price-title">Double Page</h3>
-          <del><p class="price-amount">Rs. 20</p></del>
-          <p class="price-amount"><span style="color: red;">Eid Offer Till 14th april!</span> Rs. 15</p>
+          <p class="price-amount">Rs. 20</p>
           <input type="number" id="doublePageInput" placeholder="Enter number of pages">
-          <button onclick="calculatePrice('double')">Calculate</button>
+          <button onclick="calculatePrice('double')">Calculate Price</button>
           <p id="doublePagePrice"></p>
         </div>
       </div>
     </div>
-
   </div>
 </section>
-
-
-
-
 
   <!-- Opening Hours Section -->
   <section class="opening-hours-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-4">Opening Hours</h2>
         <div class="opening-hours-info text-center mb-4">
-            <!-- <p>Monday - Friday: 5:00 PM - 9:30 PM</p>
-            <p>Saturday - Sunday: 6:00 AM - 9:30 PM</p> -->
+            <p>Monday - Friday: 5:00 PM - 9:30 PM</p>
+            <p>Saturday - Sunday: 6:00 AM - 9:30 PM</p> 
         </div>
         <div class="opening-hours-timer text-center">
             <b><p id="timingTimer"></p></b>
@@ -247,7 +244,7 @@
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
             aria-expanded="true" aria-controls="collapseOne">
-            Can I pay before getting prints?
+            Can I pay after getting prints?
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
